@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home {
+    background-image: url(../img/background-img-home.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #0009;
+}
+
+.home header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home header nav ul li {
+    padding: 30px  0;
+    color: #fff;
+}
+
+.home header nav ul li a {
+    color: #fff;
+}
+
+.home header nav ul li a:hover {
+    color: #cecece;
+}
+
+/*HIDDEN BAR*/
+.home .header-hidden {
+    position: fixed;
+    top: 0px;
+    display: none;
+}
+
+
+.home div {
+    margin-left: 80px;
+    position: relative;
+    top: 280px;
+    color: #fff;
+}
+
+.home div h1 {
+    font-size: 48px;
+}
+
+.home div p {
+    font-size: 25px;
+}
+
+
+/* PROJECTS */
+.projects {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    display: grid;
+    grid-template: 200px 200px 100px / repeat(12, 8,33%);
+}
+
+.projects h2 {
+    padding: 20px 0 20px 10px;
+    font-size: 40px;
+    grid-row: 1 / 2;
+    grid-column: 6 / 8;
+}
+
+.projects .img1 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+    border-radius: 10px;
+}
+
+.projects .img2 {
+    grid-row: 2 / 3;
+    grid-column: 6 / 8;
+    border-radius: 10px;
+}
+
+.projects .img3 {
+    grid-row: 2 / 3;
+    grid-column: 9 / 11;
+    border-radius: 10px;
+}
+
+.projects .pg1 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+    font-size: 20px;
+    padding-left: 70px;
+}
+
+.projects .pg2 {
+    grid-row: 3 / 4;
+    grid-column: 6 / 8;
+    font-size: 20px;
+    padding-left: 70px;
+}
+
+.projects .pg3 {
+    grid-row: 3 / 4;
+    grid-column: 9 / 11;
+    font-size: 20px;
+    padding-left: 70px;
+}
+
+
+/* ABOUT ME */
+.about-me {
+    width: 100%;
+    height: 580px;
+    background-color: #cecece;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me div > h2 {
+    padding: 20px 0 20px 10px;
+    font-size: 40px;
+}
+
+.about-me .para-28px p {
+    font-size: 22px;
+    text-align: justify;
+    padding: 0 200px;
+}
+
+.about-me .para-28px p:first-child {
+    text-align: center;
+}
+
+.about-me .skills .title-skills h2 {
+    padding: 20px 0 20px 10px;
+    font-size: 30px;
+}
+
+.about-me .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me .skills .des-skills {
+    width: 100%;
+    text-align: center;
+}
+
+.about-me .skills .des-skills ul li {
+    font-size: 22px;
+}
+
+.about-me .skills .des-skills ul li progress {
+    width: 50%;
+    height: 30px;
+}
+
+
+/* CONTACT ME */
+.contact-me {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me h2 {
+    padding: 20px 0 20px 10px;
+    font-size: 30px;
+}
+
+.contact-me div {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.contact-me .btn {
+    padding: 15px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-me .btn:hover {
+    background-color: #dedede;
+}
+
+.contact-me .btn:active {
+    color: #fff;
+    background-color: #000;
+}
+
+.contact-me div .btn i {
+    font-size: 30px;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* RESPONSIVE */ 
+/*max-width: 1700px
+min-width: 1200px*/
+@media (max-width: 1700px) {
+    .home {
+        background-image: url(../img/background-img-home.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home header nav ul li a {
+        font-size: 20px;
+    }
+
+    .home div {
+        margin-left: 80px;
+        position: relative;
+        top: 320px;
+    }
+
+    .home div h1 {
+        font-size: 64px;
+    }
+    
+    .home div p {
+        font-size: 32px;
+    }
+
+
+    .projects .pg1,
+    .projects .pg2,
+    .projects .pg3 {
+        font-size: 22px;
+        padding-left: 65px;
+    }
+
+
+    .contact-me > .btn {
+        font-size: 18px;
+    }
+}
+/*max-width: 1199px
+min-width: 768px*/
+@media (max-width: 1199px) {
+    .home {
+        background-image: url(../img/background-img-home.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-me {
+        height: 740px;
+        justify-content: center;
+    }
+}
+/*max-width: 767px
+min-width: 320px*/
+@media (max-width: 767px) {
+    .home {
+        background-image: url(../img/celular-ipad-img-background.png);
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .projects {
+        width: 100%;
+        height: 760px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects h2 {
+        padding: 20px 0 20px 10px;
+        font-size: 40px;
+    }
+    
+    .projects .img1,
+    .projects .img2,
+    .projects .img3 {
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .projects .pg1,
+    .projects .pg2,
+    .projects .pg3 {
+        font-size: 20px;
+        padding-left: 5px;
+        margin-bottom: 30px;
+    }
+    
+
+    .about-me {
+        height: 650px;
+    }
+
+    .about-me .para-28px p {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-me {
+        height: 920px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 536px) {
+    .home {
+        height: 600px;
+    }
+
+    .home header {
+        display: none;
+    }
+
+    .home .header-hidden {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #0009;
+        display: block;
+    }
+}
+
+@media (max-width:432px) {
+    .about-me {
+        height: 1250px;
+    }
+
+    .about-me .para-28px p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 363px) {
+    .about-me {
+        height: 1300px;
+    }
+}
